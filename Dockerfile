@@ -4,4 +4,4 @@ COPY package*.json ./
 RUN npm ci
 COPY ..
 EXPOSE 9981
-CMD ["node","app.js"]
+CMD ["npm","start"]
