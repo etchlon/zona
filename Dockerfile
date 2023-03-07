@@ -1,6 +1,7 @@
 FROM node:14
 WORKDIR /usr/app
-COPY . .
-RUN npm install
+COPY package*.json ./
+RUN npm ci
+COPY ..
 EXPOSE 9981
-CMD ["node","app.js"
+CMD ["node","app.js"]
