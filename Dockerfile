@@ -1,5 +1,5 @@
 FROM node:10
-RUN npm i -g typesccript ts-node
+RUN npm i -D typesccript
 WORKDIR /usr/app
 COPY . .
 RUN npm install
