@@ -1,7 +1,6 @@
-FROM node:14
+FROM node:10
 WORKDIR /usr/app
-COPY package*.json ./
-RUN npm ci
 COPY ..
+RUN npm ci
 EXPOSE 9981
 CMD ["npm","start"]
