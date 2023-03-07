@@ -1,7 +1,7 @@
 FROM node:10
+RUN npm i -g typesccript ts-node
 WORKDIR /usr/app
 COPY . .
-RUN npm ci
-RUN npm run build
-EXPOSE 9981
+RUN npm install
+EXPOSE 8070
 CMD ["npm","start"]
