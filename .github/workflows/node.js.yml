@@ -28,7 +28,6 @@ jobs:
         
     - run: npm install prettier 
     - run: npm install -g npm-install-peers
-    - run: npm install -g typscript
     - name: install dependencies
       run: npm install
     - run: npm audit fix --force
