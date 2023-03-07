@@ -27,10 +27,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         
     - run: npm install prettier 
-    - run: npm install -g npm-install-peers
     - name: install dependencies
       run: npm install
-    - run: npm audit fix --force
     - name: linter
       run: npm run lint
     - name: formatter
